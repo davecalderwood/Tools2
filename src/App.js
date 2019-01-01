@@ -1,26 +1,45 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Home from './pages/Home';
+import About from './pages/About';
+import Calendar from './pages/Calendar';
+import Calculator from './pages/Calculator';
 import './App.css';
 
+
 class App extends Component {
+ 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+
+      <Router>
+      <div className="App">   
+        <div className="sideBar">
+        
+          <nav role="navigation">
+            <div id="menuToggle">
+
+              <ul id="menu">
+                <a href="/"><li>Home</li></a>
+                <a href="/about"><li>About</li></a>
+                <a href="/calendar"><li>Calendar</li></a>
+                <a href="/calculator"><li>Calculator</li></a>
+              </ul>
+            </div>
+          </nav>
+          
+        </div>
+
+        <div className="main">
+          {/* Route paths */}
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/calendar" component={Calendar} />
+          <Route path="/calculator" component={Calculator} />
+        
+        </div>
       </div>
+      </Router>
     );
   }
 }
