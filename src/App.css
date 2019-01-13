@@ -63,8 +63,7 @@ button {
   user-select: none;
 }
 .month-display {
-  align-items: center;
-  height: 40px;
+  height: 80px;
   background: #2875C7;
 }
 .row {
@@ -79,20 +78,17 @@ button {
   transition: background .2s;
   height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .arrow:hover {
   background: #2875C7;
 }
 .calendar {
-  position: absolute;
-  top: 0;
-  right: 0;
+  top: 50%;
+  left: 50%;
   display: block;
   background: white;
-  width: 300px;
-  border: solid 1px #CCCCCC;
+  width: 1000px;
+  border: 1px solid black;
   margin: 10px auto;
   box-shadow: 0 0 15px 0 #C0C0C0;
   font-size: 1.3rem;
@@ -105,7 +101,7 @@ button {
 }
 .day {
   flex: 1;
-  height: 35px;
+  height: 90px;
   border-left: solid 1px;
   cursor: pointer;
   transition: all .2s;
@@ -113,6 +109,16 @@ button {
 .day.today {
   background: #2875C7;
 }
+.day.different-month {
+  color: #C0C0C0;
+}
+.day.selected {
+  color: white;
+  background: #2875C7;
+}
 .week {
   border-top: solid 1px #CCCCCC;
+}
+.header {
+  text-align: center;
 }
