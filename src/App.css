@@ -78,6 +78,7 @@ button {
   transition: background .2s;
   height: 100%;
   display: flex;
+  color: white;
 }
 .arrow:hover {
   background: #2875C7;
@@ -98,6 +99,7 @@ button {
   font-weight: bold;
   cursor: default;
   font-size: 1.2rem;
+  color: black;
 }
 .day {
   flex: 1;
@@ -114,11 +116,15 @@ button {
 }
 .day.selected {
   color: white;
-  background: #2875C7;
+  background: rgb(80, 160, 246);
 }
 .week {
   border-top: solid 1px #CCCCCC;
 }
 .header {
-  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px black;
 }
