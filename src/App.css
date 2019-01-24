@@ -128,3 +128,61 @@ button {
   text-transform: uppercase;
   -webkit-text-stroke: 1px black;
 }
+/* -------------------------- bouncing ball ---------------------------- */
+.wrap {
+  bottom: 100px;
+  margin-left: -50px;
+  position: absolute;
+  width: 100px;
+}
+.red   { left: 25%; }
+.green { left: 50%; }
+.blue  { left: 75%; }
+.ball,
+.shadow {
+  border-radius: 100%;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.ball {
+  animation: ball 300ms cubic-bezier(0.165, 0.840, 0.440, 1.000) infinite alternate;
+  height: 50px;
+  width: 50px;
+}
+.red .ball   { background: linear-gradient(#e55, rgb(197, 25, 25)); }
+.green .ball { background: linear-gradient(#5d5, rgb(43, 179, 43)); }
+.blue .ball  { background: linear-gradient(#59e, rgb(81, 117, 180)); }
+.shadow {
+  animation: shadow 300ms cubic-bezier(0.165, 0.840, 0.440, 1.000) infinite alternate;
+  background: #000;
+  bottom: -90px;
+  height: 25px;
+  width: 75px;
+}
+.red .ball, 
+.red .shadow   { animation-delay: -800ms; }
+.green .ball,
+.green .shadow { animation-delay: -400ms; }
+.blue .ball ,
+.blue .shadow  { animation-delay: 0; }
+@keyframes ball {
+  0% {
+    transform: translateY( 0 );
+  }
+  100% {
+    transform: translateY( -350px );
+  }
+}
+@keyframes shadow {
+  0% {
+    opacity: 0.2;
+    transform: scale( 0.75 );
+  }
+  100% {
+    opacity: 0.05;
+    transform: scale( 1 );
+  }
+}
