@@ -6,7 +6,7 @@ export default class About extends Component {
         <div className="component">
         {/* Info about 'About' page wih links to external sites about me, Linkedin etc... */}
             <div className="about">I made this app to continue my work on React and to keep my skills honed while I look for a job in the field. </div>
-            <img className="waterski" src="../Waterski.jpg" alt="Waterski"></img>
+            <img className="waterski" src="../Waterski.jpg" alt="Waterski"></img><br/>
             
             {/* Buttons with animations and links to other sites */}
             <a 
