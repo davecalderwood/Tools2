@@ -5,6 +5,7 @@ export default class About extends Component {
     return (
         <div className="component">
             <div className="about">I made this app to continue my work on React and to keep my skills honed while I look for a job in the field. </div>
+            <img className="waterski" src="../Waterski.jpg" alt="Waterski"></img>
         </div>
     )
     }
