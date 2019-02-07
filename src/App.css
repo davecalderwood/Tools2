@@ -20,6 +20,11 @@ html, body, #root, .App, .component {
 }
 a {
   text-decoration: none;
+  font-weight: bold;
+}
+.about {
+  text-align: center;
+  font-size: 1em;
 }
 /* ------------------------------------------ Title ------------------------------------ */
 @import url('https://fonts.googleapis.com/css?family=Chewy');
