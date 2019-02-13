@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Calendar from './pages/Calendar';
 import Calculator from './pages/Calculator';
+import Other from './pages/Other';
 import './App.css';
 
 
@@ -24,6 +25,7 @@ class App extends Component {
                 <a href="/about"><li>About</li></a>
                 <a href="/calendar"><li>Calendar</li></a>
                 <a href="/calculator"><li>Calculator</li></a>
+                <a href="/other"><li>Other</li></a>
               </ul>
             </div>
           </nav>
@@ -36,6 +38,7 @@ class App extends Component {
           <Route path="/about" component={About} />
           <Route path="/calendar" component={Calendar} />
           <Route path="/calculator" component={Calculator} />
+          <Route path="/other" component={Other} />
         
         </div>
       </div>

@@ -234,7 +234,7 @@ button {
 	-webkit-transition: all 0.1s;
 }
 .action-button {
-	position: relative;
+  position: relative;
 	padding: 10px 40px;
   margin: 0px 10px 10px 0px;
 	border-radius: 10px;
