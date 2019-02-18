@@ -17,7 +17,7 @@ export default class Calendar extends Component {
       this.previous = this.previous.bind(this);
       this.next = this.next.bind(this);
     }
-    
+    // connections for the states
     previous() {
       const {
         month,
